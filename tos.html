@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dash AI — Terms of Service</title>
+  <meta name="description" content="Terms of Service for Dash AI" />
+  <style>
+    :root {
+      --bg: #0b0c10;
+      --panel: #101218;
+      --text: #e8eaf0;
+      --muted: #a9b0bd;
+      --accent: #6ca0ff;
+      --border: #1f2330;
+      --link: #8ab4ff;
+      --focus: #2e7cf6;
+      --code: #0d1117;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(1200px 800px at 80% -10%, rgba(108,160,255,0.10), transparent 60%) var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    header {
+      padding: 32px 0 12px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo {
+      width: 36px;
+      height: 36px;
+      border-radius: 9px;
+      background: linear-gradient(135deg, #6ca0ff, #8a6cff);
+      box-shadow: 0 6px 24px rgba(108,160,255,0.35);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .logo::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(60% 60% at 70% 30%, rgba(255,255,255,0.45), transparent 60%);
+      mix-blend-mode: screen;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.4rem, 1.1rem + 1.2vw, 2rem);
+      letter-spacing: 0.2px;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-top: 6px;
+    }
+
+    .panel {
+      background: color-mix(in oklab, var(--panel) 92%, black);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px;
+      margin-top: 18px;
+    }
+
+    .toc {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 16px;
+      font-size: 0.95rem;
+    }
+
+    .toc a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 10px;
+      border-radius: 8px;
+      background: rgba(108,160,255,0.06);
+      border: 1px solid rgba(108,160,255,0.18);
+    }
+
+    .toc a:hover {
+      background: rgba(108,160,255,0.1);
+      text-decoration: none;
+    }
+
+    main {
+      margin-top: 16px;
+    }
+
+    section {
+      padding: 18px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    section:last-of-type { border-bottom: 0; }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: clamp(1.05rem, 0.95rem + 0.5vw, 1.35rem);
+      letter-spacing: 0.2px;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    ul {
+      margin: 10px 0 0 18px;
+      padding: 0;
+    }
+
+    li { margin: 6px 0; }
+
+    .notice {
+      margin-top: 10px;
+      padding: 12px 14px;
+      border-radius: 10px;
+      background: rgba(255, 193, 7, 0.08);
+      border: 1px solid rgba(255, 193, 7, 0.35);
+      color: #ffd980;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      margin: 28px 0 40px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border-radius: 10px;
+      background: linear-gradient(180deg, rgba(108,160,255,0.18), rgba(108,160,255,0.10));
+      border: 1px solid rgba(108,160,255,0.35);
+      color: var(--text);
+      cursor: pointer;
+      transition: transform 0.05s ease, background 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 6px 20px rgba(108,160,255,0.12);
+    }
+    .btn:hover {
+      transform: translateY(-1px);
+      background: linear-gradient(180deg, rgba(108,160,255,0.24), rgba(108,160,255,0.12));
+      text-decoration: none;
+    }
+    .btn:focus-visible {
+      outline: 2px solid var(--focus);
+      outline-offset: 2px;
+    }
+
+    /* Mobile tweaks */
+    @media (max-width: 600px) {
+      .container { padding: 18px; }
+      .toc { grid-template-columns: 1fr; }
+    }
+
+    /* Print styles */
+    @media print {
+      body { background: white; color: black; }
+      .panel, .btn, .logo { display: none; }
+      a { color: black; text-decoration: none; }
+      section { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header aria-labelledby="title">
+      <div class="brand" role="img" aria-label="Dash AI">
+        <div class="logo" aria-hidden="true"></div>
+        <h1 id="title">Terms of Service — Dash AI</h1>
+      </div>
+      <div class="meta">Last Updated: 21 October 2025</div>
+      <div class="panel" role="note" aria-label="Quick links">
+        <div class="toc" aria-label="Table of contents">
+          <a href="#acceptance"><span>1.</span><span>Acceptance of Terms</span></a>
+          <a href="#description"><span>2.</span><span>Description of Service</span></a>
+          <a href="#conduct"><span>3.</span><span>User Conduct</span></a>
+          <a href="#privacy"><span>4.</span><span>Data Usage and Privacy</span></a>
+          <a href="#availability"><span>5.</span><span>Service Availability</span></a>
+          <a href="#liability"><span>6.</span><span>Limitation of Liability</span></a>
+          <a href="#indemnification"><span>7.</span><span>Indemnification</span></a>
+          <a href="#safety"><span>8.</span><span>Account and Server Safety</span></a>
+          <a href="#changes"><span>9.</span><span>Changes to Terms</span></a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="acceptance">
+        <h2>1. Acceptance of Terms</h2>
+        <p>By interacting with Dash AI (hereinafter “the Service,” “Dash,” “we,” “us,” or “our”) in any Discord server or direct message where it is present, you expressly agree to be bound by these Terms of Service. If you do not agree with any part of these terms, you must cease all interaction with the Service immediately.</p>
+      </section>
+
+      <section id="description">
+        <h2>2. Description of Service</h2>
+        <p>Dash AI is a conversational artificial intelligence designed to simulate human-like interaction within designated Discord channels. The Service is hosted and operated exclusively by us on our own accounts and infrastructure. You interact with Dash AI as a service; you are not provided with the software, source code, or any ability to configure, modify, or host the underlying technology.</p>
+      </section>
+
+      <section id="conduct">
+        <h2>3. User Conduct</h2>
+        <p>You agree not to use the Service to:</p>
+        <ul>
+          <li>Violate any applicable laws, regulations, or Discord’s own Terms of Service.</li>
+          <li>Harass, abuse, threaten, or impersonate others.</li>
+          <li>Submit any content that is illegal, obscene, defamatory, or invasive of privacy.</li>
+          <li>Attempt to exploit, reverse-engineer, or disrupt the normal functioning of the Service.</li>
+        </ul>
+      </section>
+
+      <section id="privacy">
+        <h2>4. Data Usage and Privacy</h2>
+        <p><strong>4.1. Data Collection:</strong> When you interact with Dash AI, we collect the content of your messages, including the context of the conversation (previous messages in the channel) necessary for the AI to generate coherent responses.</p>
+        <p><strong>4.2. Use for Training:</strong> You acknowledge and expressly agree that all messages, conversations, and context data submitted to or processed by the Service may be used for the purpose of training and improving our AI models. This includes reviewing conversation logs to enhance the Service’s performance, accuracy, and capabilities. All data is anonymized and aggregated for training purposes.</p>
+        <p><strong>4.3. Privacy:</strong> While we implement security measures, do not share sensitive, confidential, or personal information with the Service. We are not responsible for any information you choose to submit.</p>
+        <div class="notice" role="note" aria-label="Privacy reminder">
+          Avoid sharing sensitive or personally identifiable information. Use of the Service is at your discretion.
+        </div>
+      </section>
+
+      <section id="availability">
+        <h2>5. Service Availability and Disclaimer</h2>
+        <p>The Service is provided “as is” and “as available” without any warranties of any kind. We do not guarantee that the Service will be uninterrupted, error-free, or secure. We reserve the right to modify, suspend, or discontinue the Service at any time without prior notice.</p>
+      </section>
+
+      <section id="liability">
+        <h2>6. Limitation of Liability</h2>
+        <p>To the fullest extent permitted by law, we shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or data, arising from your use of or inability to use the Service. Your sole recourse is to discontinue using the Service.</p>
+      </section>
+
+      <section id="indemnification">
+        <h2>7. Indemnification</h2>
+        <p>You agree to indemnify and hold us harmless from any claim or demand, including reasonable attorneys’ fees, made by any third party due to or arising out of your breach of these Terms or your violation of any law or the rights of a third party.</p>
+      </section>
+
+      <section id="safety">
+        <h2>8. Account and Server Safety</h2>
+        <p>The Service is hosted on our official accounts and is meticulously maintained to comply with platform rules. The use of this Service does not put the Discord server it is in or your personal account at risk of action from Discord. We bear full responsibility for the operation and compliance of the underlying technology.</p>
+      </section>
+
+      <section id="changes">
+        <h2>9. Changes to Terms</h2>
+        <p>We reserve the right to modify these Terms of Service at any time. We will provide notice of changes by updating the “Last Updated” date. Your continued use of the Service following any changes constitutes your acceptance of the new terms.</p>
+      </section>
+
+      <div class="panel" aria-label="Actions">
+        <a class="btn" href="#title" title="Back to top" aria-label="Back to top">⬆ Back to top</a>
+      </div>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Dash AI. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+
+    // Smooth-scroll for in-page links
+    document.addEventListener('click', (e) => {
+      const a = e.target.closest('a[href^="#"]');
+      if (!a) return;
+      const id = a.getAttribute('href').slice(1);
+      const target = document.getElementById(id);
+      if (!target) return;
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      history.pushState(null, '', '#' + id);
+    });
+  </script>
+</body>
+</html>
